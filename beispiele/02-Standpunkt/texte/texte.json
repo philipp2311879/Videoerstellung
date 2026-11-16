@@ -1,0 +1,9 @@
+{
+  "hook": {"html": "Bei dieser Frage muss<br>sich die <em>ganze Klasse</em><br>entscheiden. Wo setzt<br>du deinen Punkt?", "top": 178, "size": 66},
+  "satz2": {"html": "Und hinter jedem Punkt<br>steckt eine <em>Begründung</em>", "top": 260, "size": 74},
+  "sticker": "Standpunkt",
+  "sticker_gr": 140,
+  "titel_gr": 158,
+  "wort": "STANDPUNKT",
+  "pille": "Wo stehst du?"
+}

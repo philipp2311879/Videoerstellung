@@ -1,0 +1,23 @@
+{
+ "start": 0,
+ "R1-Pinguine": 30,
+ "R1-machen": 54,
+ "R1-Heiratsanträge": 78,
+ "R1-mit Steinen": 126,
+ "R1-.": 150,
+ "neu-auf": 163,
+ "farbe-Machen": 177,
+ "ablage-Machen": 182,
+ "farbe-?": 189,
+ "ablage-?": 194,
+ "neu-zu": 196,
+ "pop-Machen": 210,
+ "pop-?": 222,
+ "R2-Machen": 258,
+ "R2-Pinguine": 282,
+ "R2-Heiratsanträge": 306,
+ "R2-mit Steinen": 342,
+ "R2-?": 354,
+ "maus-weg": 376,
+ "ende": 570
+}

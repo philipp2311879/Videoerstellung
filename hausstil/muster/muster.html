@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Hausstil Muster</title>
+<!-- Vorschlag einheitlicher Look (14.11.2026): links Profilraster 3:4 mit gleichen Titelbildern, rechts ein Reel-Bild 9:16 mit Titel, Untertitel und sicheren Zonen. Gerendert mit render.cjs. -->
+<style>
+@font-face { font-family: "Fredoka"; src: url("fredoka.woff2") format("woff2"); font-weight: 300 700; }
+@font-face { font-family: "Inter"; src: url("Inter-ExtraBold.ttf"); font-weight: 800; }
+html, body { margin: 0; background: #f4f1ea; font-family: "Inter"; }
+body { width: 1700px; height: 1180px; position: relative; }
+h1 { position: absolute; left: 40px; top: 18px; margin: 0; font: 700 40px "Fredoka"; color: #14254f; }
+h2 { margin: 0 0 10px; font: 700 26px "Fredoka"; color: #14254f; }
+.links { position: absolute; left: 40px; top: 84px; }
+.raster { display: grid; grid-template-columns: repeat(3, 300px); gap: 4px; }
+.kachel { width: 300px; height: 400px; position: relative; overflow: hidden; background: #222; }
+.kachel > img { position: absolute; left: 0; top: -66px; width: 300px; height: 533px; object-fit: cover; }
+.kachel.kar > img { top: 0; height: 400px; }
+.titel { position: absolute; left: 0; right: 0; top: 232px; text-align: center; transform: rotate(-3deg); }
+.titel .z { position: relative; display: inline-block; font: 700 44px/1 "Fredoka"; white-space: nowrap; }
+.titel .rand { position: absolute; left: 0; top: 0; color: #fff; -webkit-text-stroke: 10px #fff;
+  filter: drop-shadow(0 4px 0 rgba(20,37,79,.35)) drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
+.titel .fuell { position: relative; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pille { display: inline-block; margin-top: 6px; padding: 3px 14px 5px; border-radius: 30px; border: 3px solid #fff;
+  color: #fff; font: 600 18px/1 "Fredoka"; letter-spacing: .5px; box-shadow: 0 3px 8px rgba(0,0,0,.3); transform: rotate(2deg); }
+.rosa .fuell { background-image: linear-gradient(100deg, #ff4fa0, #ff7ac8 35%, #b57bff 70%, #ff9e6b); } .rosa .pille { background: #ff69b4; }
+.blau .fuell { background-image: linear-gradient(100deg, #1f5bff, #2f8dff 45%, #19b4ff); } .blau .pille { background: #1f6bff; }
+.gruen .fuell { background-image: linear-gradient(100deg, #18a957, #39c46b 45%, #8bd43a); } .gruen .pille { background: #1fae5b; }
+.gelb .fuell { background-image: linear-gradient(100deg, #ff8a00, #ffb000 50%, #ffcc33); } .gelb .pille { background: #ff9500; }
+.reel-icon { position: absolute; right: 8px; top: 8px; width: 18px; height: 18px; border: 2.5px solid #fff; border-radius: 5px; box-sizing: border-box; }
+.legende { margin-top: 14px; width: 908px; font: 800 17px/1.45 "Inter"; color: #333; }
+.legende b { display: inline-block; width: 14px; height: 14px; border-radius: 4px; vertical-align: -1px; margin: 0 5px 0 14px; }
+.rechts { position: absolute; left: 1010px; top: 84px; }
+.reel { width: 405px; height: 720px; position: relative; overflow: hidden; border-radius: 10px; }
+.reel > img { width: 405px; height: 720px; }
+.reel .zone { position: absolute; left: 0; right: 0; background: rgba(255,0,0,.18); border: 1.5px dashed rgba(255,60,60,.9); color: #fff;
+  font: 800 11px "Inter"; text-align: center; box-sizing: border-box; padding-top: 3px; }
+.reel .zoneR { position: absolute; right: 0; top: 300px; width: 52px; height: 330px; background: rgba(255,0,0,.18); border: 1.5px dashed rgba(255,60,60,.9); box-sizing: border-box; }
+.reel .raster34 { position: absolute; left: 0; right: 0; top: 90px; height: 540px; border: 2px solid #ffd43b; box-sizing: border-box; }
+.reel .raster34 span { position: absolute; left: 6px; top: 4px; font: 800 11px "Inter"; color: #ffd43b; text-shadow: 0 1px 2px #000; }
+.reel .titel { top: 110px; }
+.reel .titel .z { font-size: 52px; }
+.reel .titel .rand { -webkit-text-stroke: 12px #fff; }
+.ut { position: absolute; left: 0; right: 0; top: 452px; text-align: center; white-space: nowrap; font: 800 30px "Inter"; color: #fff;
+  text-shadow: 0 0 3px #000, 0 0 6px rgba(0,0,0,.85), 0 2px 10px rgba(0,0,0,.6); }
+.ut em { font-style: normal; color: #ffd43b; }
+.erkl { position: absolute; left: 430px; top: 0; width: 250px; font: 800 16px/1.45 "Inter"; color: #333; }
+.erkl p { margin: 0 0 14px; }
+.erkl .k { font: 700 20px "Fredoka"; color: #14254f; display: block; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+<h1>Vorschlag: ein Look für alle Reels</h1>
+<div class="links">
+  <h2>Profilraster (so schneidet Instagram: 3:4)</h2>
+  <div class="raster">
+    <div class="kachel rosa"><img src="a.jpg"><div class="reel-icon"></div><div class="titel"><div class="z"><span class="rand">Drachenei</span><span class="fuell">Drachenei</span></div><br><div class="pille">Freebie Friday</div></div></div>
+    <div class="kachel kar"><img src="kar.png"></div>
+    <div class="kachel gruen"><img src="c.jpg"><div class="reel-icon"></div><div class="titel"><div class="z"><span class="rand">Begriffe raten</span><span class="fuell">Begriffe raten</span></div><br><div class="pille">Klassenspiel</div></div></div>
+    <div class="kachel blau"><img src="b.jpg"><div class="reel-icon"></div><div class="titel"><div class="z"><span class="rand">Schaffst du's?</span><span class="fuell">Schaffst du's?</span></div><br><div class="pille">Rätsel</div></div></div>
+    <div class="kachel gruen"><img src="d.jpg"><div class="reel-icon"></div><div class="titel"><div class="z"><span class="rand">Flüsterwelt</span><span class="fuell">Flüsterwelt</span></div><br><div class="pille">Klassenspiel</div></div></div>
+    <div class="kachel gelb"><img src="e.jpg"><div class="reel-icon"></div><div class="titel"><div class="z"><span class="rand">Lieblingstier?</span><span class="fuell">Lieblingstier?</span></div><br><div class="pille">Ihr wünscht, wir bauen</div></div></div>
+  </div>
+  <div class="legende">Gleiche Schrift, gleiche Größe, gleiche Stelle, nur die Farbe zeigt die Reihe:
+    <br><b style="background:#ff69b4"></b>Freebie Friday <b style="background:#1f6bff"></b>Werkzeug / Rätsel <b style="background:#1fae5b"></b>Klassenspiel <b style="background:#ff9500"></b>Wunsch-Serie (So)
+    <br>Titel immer in der Mitte, nie ganz oben: Instagram schneidet im Raster oben und unten ab.</div>
+</div>
+<div class="rechts">
+  <h2>Im Reel selbst (9:16)</h2>
+  <div class="reel rosa">
+    <img src="a.jpg">
+    <div class="zone" style="top:0;height:60px">Instagram-Kopf</div>
+    <div class="zone" style="bottom:0;height:150px">Caption und Name</div>
+    <div class="zoneR"></div>
+    <div class="raster34"><span>sichtbar im Profilraster</span></div>
+    <div class="titel"><div class="z"><span class="rand">Freebie</span><span class="fuell">Freebie</span></div><br><div class="z"><span class="rand">Friday</span><span class="fuell">Friday</span></div><br><div class="pille" style="font-size:20px">Escape-Room</div></div>
+    <div class="ut">Deine Klasse hat <em>30 Min.</em></div>
+  </div>
+  <div class="erkl">
+    <p><span class="k">Titel</span>Fredoka Bold, weißer Sticker-Rand, Farbverlauf der Reihe, leicht schräg. Erste 2 s groß, dann klein oben.</p>
+    <p><span class="k">Untertitel</span>Inter ExtraBold, weiß mit dunklem Schein, 2–4 Wörter, immer auf derselben Höhe (Brust), Schlüsselwort gelb. Deutlich größer als bisher.</p>
+    <p><span class="k">Ende</span>Immer dieselbe Karte: „Kommentiere ESCAPE“ + lehrerkoffer.de.</p>
+    <p><span class="k">Rot</span>bleibt frei (Instagram-Knöpfe und Text).</p>
+  </div>
+</div>
+</body>
+</html>

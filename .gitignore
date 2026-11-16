@@ -1,0 +1,25 @@
+# Abhängigkeiten
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Rohaufnahmen und fertige Videos gehören nicht ins Git (zu groß). Geteilt wird über Content-Planer / Google Drive.
+reels/*/aufnahmen/
+reels/*/fertig/
+beispiele/*/fertig/*.mp4
+beispiele/*/fertig/*.wav
+beispiele/*/fertig/probe/
+beispiele/*/fertig/_teile/
+beispiele/*/fertig/_tmp/
+beispiele/*/texte/*.png
+beispiele/*/texte/_texte.html
+reels/*/texte/_texte.html
+**/fertig/_tmp/
+**/fertig/_teile/
+
+# Systemdateien
+.DS_Store
+Thumbs.db
+desktop.ini

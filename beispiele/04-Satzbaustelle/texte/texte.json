@@ -1,0 +1,11 @@
+{
+  "hook": {"html": "Achte nur auf den<br><em>roten</em> Stein. Am Ende<br>verstehst du, warum.", "top": 178, "size": 66},
+  "satz2": {"html": "Deine SuS bauen<br>beide Sätze einzeln<br>auf ihrem <em>iPad</em>", "top": 178, "size": 66},
+  "satz3": {"html": "Vorne siehst du dann:<br>Das <em>Verb</em> springt<br>nach vorne", "top": 178, "size": 66},
+  "ende_satz": {"html": "Schick das einer<br>Lehrkraft, die <em>Deutsch</em><br>unterrichtet.", "top": 178, "size": 66},
+  "sticker": "Satzbaustelle",
+  "sticker_gr": 118,
+  "titel_gr": 132,
+  "wort": "SATZBAUSTELLE",
+  "pille": "Aussage oder Frage?"
+}

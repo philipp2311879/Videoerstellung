@@ -1,0 +1,5 @@
+# Python 3.11 oder neuer. Dazu FFmpeg (ffmpeg + ffprobe im PATH) und Node 20 oder neuer.
+numpy>=1.26
+pillow>=10.0
+# optional, für genaue Untertitel-Zeiten bei Reels mit Gesicht (lädt beim ersten Mal ein Whisper-Modell):
+# faster-whisper>=1.0

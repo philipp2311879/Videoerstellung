@@ -1,0 +1,9 @@
+{
+  "hook": {"html": "Nie wieder die Frage:<br><em>Wie lange noch?</em>", "top": 220, "size": 78},
+  "satz2": {"html": "Und alle sehen, was<br>als <em>Nächstes</em> kommt", "top": 260, "size": 74},
+  "sticker": "Timer",
+  "sticker_gr": 160,
+  "titel_gr": 180,
+  "wort": "TIMER",
+  "pille": "Mit Phasen"
+}

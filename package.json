@@ -1,0 +1,13 @@
+{
+  "name": "lehrerkoffer-videoerstellung",
+  "private": true,
+  "description": "Reels im Lehrerkoffer-Hausstil: Texte, Titelbilder und Bildschirm-Szenen per Playwright",
+  "scripts": {
+    "texte": "node baukasten/texte.cjs",
+    "titelbild": "node baukasten/titelbild.cjs",
+    "browser": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "1.63.0"
+  }
+}
